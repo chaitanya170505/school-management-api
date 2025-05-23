@@ -3,6 +3,12 @@ const express = require("express");
 const router = express.Router();
 const db = require("../db");
 
+
+router.get('/', (req, res) => {
+  res.send('School Management API is running');
+});
+
+
 // Haversine formula to calculate distance
 function calculateDistance(lat1, lon1, lat2, lon2) {
   const toRad = (val) => (val * Math.PI) / 180;
