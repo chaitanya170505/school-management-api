@@ -76,7 +76,6 @@ router.get("/listSchools", (req, res) => {
 
     schoolsWithDistance.sort(compareDistance);
 
-    // Step 3: Return the array of school objects with distance
     res.json(schoolsWithDistance);
   });
 });
